@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <link href="design.css" rel="stylesheet" type="text/CSS">
+        <title>Guess The Code</title>
+    </head>
+    <body>
+        <h1>Guess The Code</h1>
+        <br><br><br>
+        <div id="rules">
+            <h2>Rules of the Game</h2>
+            <br>
+            <p>A 4 digit code will be decided for you.<br>
+            You have to guess it in the correct order.
+            <br><br>On each check, you will be provided with hints.
+            <br>Want to know "How many digits are at correct place and 
+            <br>how many digits are correct in your guessing?", Don't Worry.
+            <br> That is provided.
+            <br>So what are you waiting for? Start Guessing!
+            </p>
+
+        </div>
+
+        <div id="flex">
+        <h3>Enter your code here!</h3>
+        <br>
+        <div id="code">
+            <input type="text" id="enter1" class="enter">
+            <input type="text" id="enter2" class="enter">
+            <input type="text" id="enter3" class="enter">
+            <input type="text" id="enter4" class="enter">
+            <br><br>
+        </div>
+        <br><br>
+        <div>
+        <button onclick="check()">Check?</button>
+        <br><br><br><br>
+        <div id="hints"><h3>Your Hints</h3>
+            <p id="hint" style="color:white">
+                <script src="game.js" type="text/javascript"></script>
+                <p id="result" style="color:white"></p>
+            </p>
+        </div>
+        </div>
+        </div>
+        
+    </body>
+    <footer>
+        <h3>Thank you for visiting! <br> Hope you enjoyed!</h3>
+    </footer>
+</html>

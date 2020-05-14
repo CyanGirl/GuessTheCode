@@ -1,0 +1,58 @@
+h1{
+    color:white;
+    text-align:center;
+    grid-area:header;
+}
+body{
+    display:grid;
+    grid-template-areas:"header header""rule content";
+    background-image: url("background2.jpg");
+    }
+h2,h3{
+    color:white;
+}
+#rules{
+    grid-area:rule;
+    color:white;
+    line-height: 20px;
+    
+}
+#code{
+    display:flex;
+    flex-direction:wrap;
+    justify-content: space-evenly;
+}
+#footer{
+    color:white;
+}
+#flex{
+    grid-area:content;
+    text-align:center;
+}
+.enter{
+    grid-area:content;
+    height:50px;
+    width:50px;
+    font-size: 30px;
+    opacity:45%;
+    border: 10px solid black;
+}
+button{
+    height:30px;
+    width:80px;
+    opacity:60%;
+    border: 5px solid black;
+}
+#hints{
+    border:2px solid beige;
+}
+@media(max-width:800px)
+{
+ .enter{
+     height:30px;
+     width:30px;
+     }  
+     button{
+         width:60px;
+     } 
+}
