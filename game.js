@@ -14,7 +14,7 @@ for (var i=0;i<4;i++)
 }
 if(repeat!=0)
 {
-document.getElementById("hint").innerHTML="There is "+code+repeat+" repition of a certain number!";
+document.getElementById("hint").innerHTML="There is "+repeat+" repition of a certain number!";
 }
 else{
 document.getElementById("hint").innerHTML="All digits are unique! Guess hard!";
