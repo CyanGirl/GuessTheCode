@@ -30,9 +30,9 @@ function check()
     var val3=document.getElementById("enter3").value;
     var val4=document.getElementById("enter4").value;
     var val=[val1,val2,val3,val4];
-    if(attempts==0)
+    if(attempts<=0)
     {
-        alert("You have reached maximum attempts! Refresh Again! The code was "+code);
+        alert("You have reached maximum attempts! Refresh Again To Play! The code was "+code);
     }
     else{
     if(val[0]==code[0] && val[1]==code[1] && val[2]==code[2] && val[3]==code[3])

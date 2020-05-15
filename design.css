@@ -32,6 +32,7 @@ footer{
 #rough{
     width:96%;
     opacity:30%;
+    font-size:20px;
 }
 #flex{
     grid-area:content;
@@ -61,7 +62,7 @@ button{
 #footer1{
     grid-area:
 }
-@media(max-width:600px)
+@media(max-width:800px)
 {
  .enter{
      height:55px;
@@ -82,6 +83,7 @@ button{
      #rough{
          opacity:30%;
          width:96%;
+         font-size: 16px;
      }
      
 }
