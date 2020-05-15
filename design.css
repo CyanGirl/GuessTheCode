@@ -52,19 +52,23 @@ button{
 @media(max-width:800px)
 {
  .enter{
-     height:45px;
-     width:45px;
+     height:55px;
+     width:55px;
      }  
      p{
          font-size: medium;
      } 
      button{
-         height:40px;
-         width:80px;
+         height:50px;
+         width:90px;
      }
      h1{
          font-size:40px;
      }
+     #hint{
+         font-size: 20px;
+     }
+     
 }
 .cursive{
     font-family: cursive;
