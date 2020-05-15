@@ -38,7 +38,9 @@ function check()
     if(val[0]==code[0] && val[1]==code[1] && val[2]==code[2] && val[3]==code[3])
     {
         alert("HURRAY!!");
-        document.getElementById("result").innerHTML="Hurray! Congrats! You have solved the code! Have a party!!";
+        document.getElementById("hint").innerHTML="";
+        document.getElementById("result").innerHTML="Congrats! You have solved the code!";
+        document.getElementById("get").innerHTML="Party Hard!!!";
     }
     else{
         rightplace=0;
@@ -56,7 +58,8 @@ function check()
                 }
             }
         }
-        document.getElementById("result").innerHTML="Sorry! Try Again! :-)     ||         HINTS: Digits guessed = "+correct+"  ||   Digits at correct places=  "+rightplace+" ||  Your last input was= "+val;
+        document.getElementById("result").innerHTML="OOPS!!!! Try Again! :-) ";
+        document.getElementById("get").innerHTML="HINTS: Digits guessed = "+correct+"  ||   Digits at correct places=  "+rightplace+" ||  Your last input was= "+val;
     }
 }
 }
