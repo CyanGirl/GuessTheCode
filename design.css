@@ -49,7 +49,7 @@ button{
     border:2px solid beige;
     box-shadow: 10px 6px 10px 3px blueviolet;
 }
-@media(max-width:800px)
+@media(max-width:600px)
 {
  .enter{
      height:55px;
@@ -64,6 +64,9 @@ button{
      }
      h1{
          font-size:40px;
+     }
+     #result{
+         font-size: small;
      }
      
 }
