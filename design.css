@@ -31,7 +31,7 @@ footer{
 }
 #rough{
     width:96%;
-    opacity:30%;
+    opacity:0.35;
     font-size:20px;
 }
 #flex{
@@ -43,13 +43,13 @@ footer{
     height:55px;
     width:55px;
     font-size: 30px;
-    opacity:45%;
+    opacity:0.35;
     border: 10px solid black;
 }
 button{
     height:40px;
     width:90px;
-    opacity:60%;
+    opacity:0.35;
     border: 5px solid black;
 }
 #hints{
@@ -59,29 +59,26 @@ button{
 #cursive{
     font-family: cursive;
 }
-#footer1{
-    grid-area:
-}
 @media(max-width:800px)
 {
  .enter{
      height:55px;
      width:55px;
      font-size: 30px;
-    opacity:45%;
+    opacity:0.35;
     border: 10px solid black;
      }   
      button{
          height:50px;
          width:90px;
-         opacity:60%%;
+         opacity:0.4;
         border: 5px solid black;
      }
      h1{
          font-size:40px;
      }
      #rough{
-         opacity:30%;
+         opacity:0.3;
          width:96%;
          font-size: 16px;
      }
