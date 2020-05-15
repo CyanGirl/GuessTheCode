@@ -79,5 +79,9 @@ button{
      h1{
          font-size:40px;
      }
+     #rough{
+         opacity:30%;
+         width:96%;
+     }
      
 }
