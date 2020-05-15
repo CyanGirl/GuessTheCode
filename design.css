@@ -47,7 +47,11 @@ button{
 }
 #hints{
     border:2px solid beige;
+    opacity:65%;
     box-shadow: 10px 6px 10px 3px blueviolet;
+}
+#cursive{
+    font-family: cursive;
 }
 @media(max-width:600px)
 {
