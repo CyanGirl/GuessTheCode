@@ -21,12 +21,17 @@ h2,h3{
 }
 #code{
     display:flex;
-    flex-direction:wrap;
+    flex-direction:row;
     justify-content: space-evenly;
 }
 footer{
     color:white;
     grid-area:footer;
+
+}
+#rough{
+    width:96%;
+    opacity:30%;
 }
 #flex{
     grid-area:content;
@@ -52,6 +57,9 @@ button{
 }
 #cursive{
     font-family: cursive;
+}
+#footer1{
+    grid-area:
 }
 @media(max-width:600px)
 {
