@@ -17,7 +17,6 @@ h2,h3{
     grid-area:rule;
     color:white;
     line-height: 20px;
-    font-family: cursive;
     
 }
 #code{
@@ -31,7 +30,6 @@ h2,h3{
 #flex{
     grid-area:content;
     text-align:center;
-    font-family: cursive;
 }
 .enter{
     grid-area:content;
@@ -50,7 +48,6 @@ button{
 #hints{
     border:2px solid beige;
     box-shadow: 10px 6px 10px 3px blueviolet;
-    font-family: cursive;
 }
 @media(max-width:800px)
 {
@@ -68,4 +65,7 @@ button{
      h1{
          font-size:40px;
      }
+}
+.cursive{
+    font-family: cursive;
 }
