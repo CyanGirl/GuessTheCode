@@ -41,17 +41,22 @@ function check()
         document.getElementById("result").innerHTML="Hurray! Congrats! You have solved the code! Have a party!!";
     }
     else{
+        rightplace=0;
+        correct=0;
         for(let i=0;i<4;i++)
         {
             if(val[i]==code[i]){
                 rightplace+=1;
             }
-            if(code.indexOf(val[i])>=0)
+            for(let j=0;j<4;j++)
             {
-                correct+=1;
+                if(code[i]==val[j])
+                {
+                    correct+=1;
+                }
             }
         }
-        document.getElementById("result").innerHTML="Sorry! Try Again! But here are some hints for you: \n You have guessed "+correct+" digits and "+rightplace+" digits are at right places!"+"Your last input was: "+val;
+        document.getElementById("result").innerHTML="Sorry! Try Again! :-)     ||         HINTS: Digits guessed = "+correct+"  ||   Digits at correct places=  "+rightplace+" ||  Your last input was= "+val;
     }
 }
 }
