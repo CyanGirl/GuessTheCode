@@ -56,14 +56,14 @@ button{
      width:55px;
      }   
      button{
-         height:100px;
-         width:100px;
+         height:50px;
+         width:90px;
      }
      h1{
-         font-size:45px;
+         font-size:40px;
      }
-     #result{
-         font-size: 15px;
+     .cursive{
+         font-family: cursive;
      }
      
 }
