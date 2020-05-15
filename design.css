@@ -56,14 +56,14 @@ button{
      width:55px;
      }   
      button{
-         height:70px;
-         width:90px;
+         height:100px;
+         width:100px;
      }
      h1{
-         font-size:40px;
+         font-size:45px;
      }
      #result{
-         font-size: small;
+         font-size: 15px;
      }
      
 }
