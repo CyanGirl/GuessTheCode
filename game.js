@@ -14,7 +14,7 @@ for (var i=0;i<4;i++)
 }
 if(repeat!=0)
 {
-document.getElementById("hint").innerHTML="There is "+repeat+" repition of a certain number!";
+document.getElementById("hint").innerHTML="One digit appeared "+(repeat+1)+" times";
 }
 else{
 document.getElementById("hint").innerHTML="All digits are unique! Guess hard!";
@@ -32,7 +32,7 @@ function check()
     var val=[val1,val2,val3,val4];
     if(attempts==0)
     {
-        alert("You have reached maximum attempts! Refresh Again!");
+        alert("You have reached maximum attempts! Refresh Again! The code was "+code);
     }
     else{
     if(val[0]==code[0] && val[1]==code[1] && val[2]==code[2] && val[3]==code[3])
@@ -51,9 +51,7 @@ function check()
                 correct+=1;
             }
         }
-        document.getElementById("result").innerHTML="Sorry! Try Again! But here are some hints for you: You have guessed "+correct+" digits and "+rightplace+" digits are at right places!";
-        
-        
+        document.getElementById("result").innerHTML="Sorry! Try Again! But here are some hints for you: \n You have guessed "+correct+" digits and "+rightplace+" digits are at right places!"+"Your last input was: "+val;
     }
 }
 }

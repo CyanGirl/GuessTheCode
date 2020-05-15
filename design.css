@@ -2,6 +2,8 @@ h1{
     color:white;
     text-align:center;
     grid-area:header;
+    text-shadow: 10px 6px 5px blueviolet;
+    font-size:60px;
 }
 body{
     display:grid;
@@ -15,6 +17,7 @@ h2,h3{
     grid-area:rule;
     color:white;
     line-height: 20px;
+    font-family: cursive;
     
 }
 #code{
@@ -28,31 +31,41 @@ h2,h3{
 #flex{
     grid-area:content;
     text-align:center;
+    font-family: cursive;
 }
 .enter{
     grid-area:content;
-    height:50px;
-    width:50px;
+    height:55px;
+    width:55px;
     font-size: 30px;
     opacity:45%;
     border: 10px solid black;
 }
 button{
-    height:30px;
-    width:80px;
+    height:40px;
+    width:90px;
     opacity:60%;
     border: 5px solid black;
 }
 #hints{
     border:2px solid beige;
+    box-shadow: 10px 6px 10px 3px blueviolet;
+    font-family: cursive;
 }
 @media(max-width:800px)
 {
  .enter{
-     height:30px;
-     width:30px;
+     height:45px;
+     width:45px;
      }  
-     button{
-         width:60px;
+     p{
+         font-size: medium;
      } 
+     button{
+         height:40px;
+         width:80px;
+     }
+     h1{
+         font-size:40px;
+     }
 }
