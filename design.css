@@ -60,10 +60,14 @@ footer {
   border: 10px solid black;
 }
 button {
-  height: 40px;
-  width: 90px;
-  opacity: 0.35;
+  height: 5vh;
+  width: 15vw;
   border: 5px solid black;
+  font-size: 18px;
+  background-color: rgb(50, 71, 189);
+  color: white;
+  opacity: 0.8;
+  padding: 5px;
 }
 #hints {
   border: 2px solid #716ca6;
@@ -74,17 +78,17 @@ button {
 }
 @media (max-width: 800px) {
   .enter {
-    height: 55px;
-    width: 55px;
+    height: 65px;
+    width: 65px;
     font-size: 30px;
-    opacity: 0.35;
+    opacity: 0.8;
     border: 10px solid black;
   }
   button {
-    height: 50px;
-    width: 90px;
-    opacity: 0.4;
     border: 5px solid black;
+    background-color: rgb(50, 71, 189);
+    color: white;
+    opacity: 0.8;
   }
   h1 {
     font-size: 40px;
@@ -94,6 +98,9 @@ button {
     width: 96%;
     font-size: 16px;
   }
+}
+.blink:hover {
+  box-shadow: 5px 5px 8px 5px white;
 }
 @keyframes anim {
   0% {

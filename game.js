@@ -8,7 +8,7 @@ for (var i = 0; i < 4; i++) {
     repeat += 1;
   }
 }
-if (repeat != 0) {
+if (repeat > 0) {
   document.getElementById("hint").innerHTML =
     "One digit appeared " + (repeat + 1) + " times";
 } else {
