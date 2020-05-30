@@ -75,6 +75,7 @@ button {
 }
 #cursive {
   font-family: cursive;
+  text-align: center;
 }
 @media (max-width: 800px) {
   .enter {
