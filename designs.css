@@ -1,28 +1,29 @@
 h1 {
   color: white;
-  text-align: center;
-  grid-area: header;
   text-shadow: 10px 6px 5px blueviolet;
-  font-size: 60px;
 }
 body {
-  display: grid;
-  grid-template-areas: "header header" "rule content" "footer footer";
-  background-image: url("background2.jpg");
+  min-height: 100vh !important;
+  text-align: center;
+  background-image: url("background1.jpg");
 }
 h2,
-h3 {
-  color: white;
+h3,
+h4,
+h5 {
+  color: rgb(224, 204, 204);
+}
+p {
+  color: #afaebd;
+  font-size: small;
 }
 #rules {
-  grid-area: rule;
   color: #a4a0cf;
   line-height: 20px;
 }
 #attempts {
   border: 2px solid rgb(110, 97, 97);
   width: 30vw;
-  text-align: center;
   padding: 10px;
   margin: auto;
   color: white;
@@ -39,20 +40,20 @@ h3 {
   justify-content: space-evenly;
 }
 footer {
+  margin-top: 6%;
+  padding: 5%;
   color: white;
-  grid-area: footer;
+  background-color: #0d0a36;
+}
+#space {
+  margin-top: 5%;
 }
 #rough {
   width: 96%;
   opacity: 0.35;
   font-size: 20px;
 }
-#flex {
-  grid-area: content;
-  text-align: center;
-}
 .enter {
-  grid-area: content;
   height: 55px;
   width: 55px;
   font-size: 30px;
@@ -60,22 +61,26 @@ footer {
   border: 10px solid black;
 }
 button {
-  height: 5vh;
-  width: 15vw;
   border: 5px solid black;
   font-size: 16px;
-  background-color: rgb(50, 71, 189);
+  background-color: rgb(39, 55, 146);
   color: white;
   opacity: 0.8;
-  padding: 5px;
+  padding: 10px;
+  border-radius: 10px;
+}
+button:hover {
+  background-color: rgb(161, 165, 189);
+  color: rgb(5, 2, 2);
 }
 #hints {
-  border: 2px solid #716ca6;
-  box-shadow: 10px 6px 10px 3px blueviolet;
+  margin-top: 5%;
+  min-height: 10vh;
+  box-shadow: 1px 1px 0px 3px blueviolet;
+  padding: 2px;
 }
 #cursive {
   font-family: cursive;
-  text-align: center;
 }
 @media (max-width: 800px) {
   .enter {
@@ -91,9 +96,7 @@ button {
     color: white;
     opacity: 0.8;
   }
-  h1 {
-    font-size: 40px;
-  }
+
   #rough {
     opacity: 0.3;
     width: 96%;
@@ -101,7 +104,6 @@ button {
   }
 }
 address {
-  text-align: center;
   font-weight: bolder;
   font-size: large;
 }
