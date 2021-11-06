@@ -13,4 +13,4 @@ In this, one has to guess the Code of 4 digits that has already been selected by
 
 ## Try out
 
-> https://cyangirl.github.io/GuessTheCode/
+> https://guessthecode-kpf4bf4yr-cyangirl.vercel.app/
