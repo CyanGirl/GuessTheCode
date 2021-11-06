@@ -13,4 +13,4 @@ In this, one has to guess the Code of 4 digits that has already been selected by
 
 ## Try out
 
-> https://cyangirl.github.io/guessthecode/
+> https://cyangirl.github.io/GuessTheCode/
