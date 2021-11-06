@@ -1,23 +1,37 @@
 var code = [];
-var repeat = 0;
+var track={};
+
+// generating 4 digit code
 for (var i = 0; i < 4; i++) {
   code.push(Math.floor(Math.random() * 9));
-}
-for (var i = 0; i < 4; i++) {
-  if (code.indexOf(code[i]) >= 0 && i != code.indexOf(code[i])) {
-    repeat += 1;
+  if (code[i] in track){  // keeping track of repeated counts
+    track[code[i]]+=1
+  }
+  else{
+    track[code[i]]=1
   }
 }
-if (repeat > 0) {
-  document.getElementById("hint").innerHTML =
-    "One digit appeared " + (repeat + 1) + " times";
-} else {
-  document.getElementById("hint").innerHTML =
-    "All digits are unique! Guess hard!";
+
+const unicnt=Object.keys(track).length;
+var msg="";
+
+if ( unicnt ==4 ) {
+  msg="All digits are unique! Guess hard!";
 }
+else if(unicnt==3){
+  msg="3 Unique Digits are Used. 1 Digit occurs twice!!"
+}
+else if (unicnt==2){
+  msg="2 Unique digits are used. Hence 2 Digits occurs twice. Each!"
+}
+else {
+  msg="Well. You are lucky! Only 1 digit occurs 4 times!";
+}
+
+document.getElementById("hint").innerHTML =msg;
+
 var attempts = 10;
-document.getElementById("attempts").innerHTML =
-  "Total Number of Attempts  : " + attempts;
+document.getElementById("attempts").innerHTML ="Total Number of Attempts  : " + attempts;
 
 function check() {
   attempts--;
@@ -29,14 +43,13 @@ function check() {
   var val4 = document.getElementById("enter4").value;
   var val = [val1, val2, val3, val4];
   if (attempts <= 0) {
-    alert(
-      "You have reached maximum attempts! Refresh Again To Play! The code was " +
-        code
-    );
+
+    alert("You have reached maximum attempts! Refresh Again To Play! The code was " +code);
     document.getElementById("attempts").innerHTML = "No attempts left!";
     document.getElementById("hint").innerHTML = "";
     document.getElementById("result").innerHTML = "OOPS!";
     document.getElementById("get").innerHTML = "Refresh to Play Again!";
+
   } else {
     if (
       val[0] == code[0] &&
@@ -46,32 +59,29 @@ function check() {
     ) {
       alert("HURRAY!!");
       document.getElementById("hint").innerHTML = "";
-      document.getElementById("result").innerHTML =
-        "Congrats! You have solved the code!";
+      document.getElementById("result").innerHTML ="Congrats! You have solved the code!";
       document.getElementById("get").innerHTML = "Party Hard!!!";
+
     } else {
       rightplace = 0;
       correct = 0;
+      var check={}
       for (let i = 0; i < 4; i++) {
-        if (val[i] == code[i]) {
-          rightplace += 1;
-        }
-        for (let j = 0; j < 4; j++) {
-          if (code[i] == val[j]) {
-            correct += 1;
+        if (val[i] in track ){
+          if (!(val[i] in check)){
+            correct+=1
+            check[val[i]]=1
+          }
+          if (val[i]==code[i]){
+            rightplace+=1
           }
         }
-      }
+        }
+      
       document.getElementById("result").innerHTML = "OOPS!!!! Try Again! :-) ";
-      document.getElementById("get").innerHTML =
-        "HINTS: Digits guessed = " +
-        correct +
-        "  ||   Digits at correct places=  " +
-        rightplace +
-        " ||  Your last input was= " +
-        val;
-      document.getElementById("attempts").innerHTML =
-        "Attempts left  : " + attempts;
+      document.getElementById("get").innerHTML ="HINTS: Digits guessed = " +correct +"  ||   Digits at correct places=  " +rightplace +" ||  Your last input was= " +val;
+      document.getElementById("attempts").innerHTML ="Attempts left  : " + attempts;
     }
   }
-}
+  }
+
